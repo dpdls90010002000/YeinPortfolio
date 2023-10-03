@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+    <!-- Yein An 301316062 2023 Fall September -->
+
+</head>
+<body>
+  <%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+<link rel="stylesheet" href="style.css"/>
+<style>
+  body{
+    align-content: center;
+    background-color:rgb(254, 254, 254);
+    
+  }
+
+  .jumbotron {
+    color:dimgray;
+    font-size: 30px;
+    text-align: center;
+    display: flex; /* Enable flexbox for the jumbotron */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    /* height: 100vh; Make the jumbotron take up the full viewport height */
+    margin: 0; /* Remove default margin */
+    font-family: 'Poppins', sans-serif;
+   
+  }
+
+    .welcome{
+      color:dimgray;
+      text-align: left; /* Center the text within the paragraph */
+    margin-left: 100px;
+    margin-right: 300px;
+    font-family: 'Poppins', sans-serif;
+
+    }
+
+    .welcome h1{
+      color:dimgray;
+    font-size: 50px;
+
+    }
+    .welcome p {
+      color:dimgray;
+    text-align: left; /* Center the text within the paragraph */
+    margin-left: 50px;
+    margin-right: 300px;
+    font-family: 'Poppins', sans-serif;
+}
+.emoji {
+      position: absolute;
+      top: 240px; /* Adjust the top position as needed */
+      right: 130px; /* Adjust the right position as needed */
+      font-size: 200px;
+      /* You can also use background-image to display an emoji image */
+    }
+
+
+</style>
+<main class="container">
+  <div class="jumbotron">
+    <h1>Yein's Portfolio</h1>
+  </div>
+  <div class="welcome">
+    <h1>Hi! I'm Yein An</h1>
+  <h2>&lt;Welcome&gt;</h2>
+  <p>As a software engineering student, my mission is to master the art and science of coding, 
+  pushing the boundaries of innovation while adhering to the highest ethical standards. I strive 
+  to develop solutions that are not only efficient and robust but also user-centric, understanding 
+  the profound impact of technology on individuals and society. With a commitment to lifelong learning, 
+  collaboration, and responsible innovation, I aim to contribute positively to the ever-evolving world of 
+  software engineering, shaping a future that is inclusive, equitable, and sustainable.</p>
+  <h2>&lt;/Welcome&gt;</h2>
+  </div>
+  <div class="emoji">
+    <span class="emoji-icon">👩🏻‍💻</span>
+</div>
+    </main>
+    <!--bottom nav-->
+   
+   
+      <!-- script section -->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %> 
+
+
+  
+</body>
+</html>

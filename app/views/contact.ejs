@@ -1,0 +1,62 @@
+<body>
+    <%- include ('partials/header.ejs') %>
+  <%- include ('partials/main_nav.ejs') %>
+  <link rel="stylesheet" href="style.css"/>
+      <!-- Yein An 301316062 2023 Fall September -->
+
+<style>
+  .jumbotron {
+    width: 100%;
+    max-width: 500px;
+    margin: 5px auto;
+    text-align: left;
+  }
+
+  #submit{
+    border-radius: 7px;
+    border-style: bold;
+    width:70px;
+    height:30px;
+    background-color: rgb(249, 249, 249);
+    color:dimgray;
+    
+}
+
+.jumbotron h1{
+    color:dimgray;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+  
+</style>
+<main class="container">
+    <div class="jumbotron">
+            <h1>Contact me</h1>
+            <form id="sendme" action="mailto:dpdls9001000@gmail.com" method="post">
+             <fieldset id="contact">
+            <p>
+                <input id="txtName"type="txtName" name="txtName" size="70" type="txt" required="required" placeholder="Your Name">
+            </p>
+            <p>
+                <input id="txtEmail"type="txtEmail" name="txtEmail" size="70" type="txt" required="required" placeholder="Your Email">
+            </p>
+            <p>
+                <input id="txtSubject"type="txtSubject" name="txtSubject" size="70" type="txt" required="required" placeholder="Subject">
+            </p>
+            <p>
+                <input type="texPhone" id="txtPhone" size="70" placeholder="Your Phone Number 000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="required">           
+             </p>  
+            <p>
+            <textarea name="Request" id="Request" rows="15" cols="57" placeholder="Your Message"></textarea>
+		    </p>
+             <p>
+                    <input id="submit"name="btnSubmit" type="submit" value="Send Me">
+            </p>
+        </fieldset>
+        </form>
+        </div>
+        </main>
+
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>

@@ -1,0 +1,124 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+<link rel="stylesheet" href="style.css"/>
+    <!-- Yein An 301316062 2023 Fall September -->
+
+<style>
+.jumbotron h1{
+    color: dimgray;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+
+}
+.project-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin-left: 200px;
+}
+
+.project-container img {
+  width: 600px;
+  height: 400px;
+  outline-style: solid;
+  outline-color: dimgray;
+}
+
+.project-container h3 {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 24px; 
+  font-weight: bold;
+  align-items:flex-start;
+  color: dimgray;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.project-container p {
+  margin-top: 10px;
+  font-size: 18px; 
+  color: dimgray;
+  text-align: left;
+  white-space: normal; /* Allow text to wrap */
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+</style>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1>Projects</h1>
+  </div>
+  <div class="project-container">
+    <img src="/img/project3.png" alt="logo" />
+    <div class="project-text">
+    <h3>Monster Hunter</h3>
+    <p>This concise code snippet showcases a JavaScript-driven HTML5 canvas game called "Monster Hunter."
+       It establishes an interactive canvas element where players can catch a moving monster by clicking on it,
+        earning points in the process. The game implements progressive difficulty by increasing the monster's 
+        speed as time progresses and offers functionality to reset the score and speed settings. 
+        This project exemplifies adeptness in web development, combining HTML, JavaScript, and canvas rendering, 
+        making it a compelling addition to a portfolio for demonstrating proficiency in interactive web development.
+
+    </p>
+    <a href="https://github.com/dpdls90010002000/MonsterGame"target="_blank"><button>Link to github</button></a>
+
+    </div>
+  </div>
+  <div class="project-container">
+    <img src="/img/project2.png" alt="logo" />
+    <div class="project-text">
+    <h3>Interactive Slideshow</h3>
+    <p>This web project focuses on creating an interactive image viewer, or "lightbox," for a photography website. 
+      Users can click on images to view them in an elegant overlay interface, and they 
+      have the option to add their favorite images to a separate favorites list, which has a limit of five images and prevents duplicates.
+       This feature-rich image viewer enhances the user experience, enabling easy navigation and personalization of the photography collection.</p>
+       <a href="https://github.com/dpdls90010002000/InteractiveSlideShow"target="_blank"><button>Link to github</button></a>
+
+    </div>
+  </div>
+  <div class="project-container">
+    <img src="/img/project4.png" alt="logo" />
+    <div class="project-text">
+    <h3>Pizza Order App</h3>
+    <p>This C# Windows Forms application, named "Yein's Pizza" serves as an interactive pizza ordering system. 
+      It features a user-friendly interface where customers can input their name, phone number, pizza size, quantity, 
+      toppings, and select between vegetarian and non-vegetarian options. The program validates customer information, 
+      calculates the order's cost, including tax, and maintains a list of orders. 
+      Users can also take advantage of a daily special offer. Additionally, 
+      the application allows users to adjust the quantity of pizzas ordered. 
+      A separate form displays a list of stored orders. Overall, "Yein's Pizza" showcases a functional and 
+      well-structured pizza ordering system, suitable for a portfolio to demonstrate Windows Forms development skills.</p>
+      <a href="https://github.com/dpdls90010002000/PizzaOrderApp"target="_blank"><button>Link to github</button></a>
+    </div>
+  </div>
+  <div class="project-container">
+    <img src="/img/project1.png" alt="logo" />
+    <div class="project-text">
+    <h3>Realestate Homepage </h3>
+    <p>This HTML code snippet showcases a web page for a fictional real estate agent, 
+      Amy, featuring a header with contact details, a navigation bar, a main content section with a mission statement, 
+      customer feedback, and property listings, and a footer with copyright information. It also incorporates HTML forms, 
+      adding interactivity and functionality to the page. This concise representation highlights web development 
+      and UI design skills, making it a valuable addition to a portfolio.</p>
+    <a href="https://github.com/dpdls90010002000/MonsterGame"target="_blank"><button>Link to github</button></a>
+    </div>
+
+  </div>
+</main>
+<!--bottom nav-->
+<!--script section-->
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

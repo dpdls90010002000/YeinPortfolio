@@ -1,0 +1,136 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+     <!-- Yein An 301316062 2023 Fall September -->
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .jumbotron {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      justify-content: space-between;
+    }
+
+    .profile-image-container {
+      width: 100%;
+      max-width: 400px; /* Set a maximum width for the profile image container */
+      margin-right: 100px; /* Add margin to the right of the profile image */
+      margin-top: 70px;
+      margin-left: 30px;
+      position: relative;
+    }
+
+    .profile {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .title {
+  color: white;
+  text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  position: absolute;
+  top: 150px; /* Adjust the top distance as needed */
+  right: 100px; /* Adjust the right distance as needed */
+}
+
+    body {
+      height: 100%;
+      background: linear-gradient(40deg, #ffffff 50%, #294384 50%);
+      margin: 0;
+      padding: 0;
+    }
+
+
+    .buttons {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically */
+  position: relative;
+  top: -100px; /* Adjust the value to move the buttons closer to the title */
+  margin-right: 250px;
+}
+
+.buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 30px; /* Add spacing between buttons */
+}
+
+.buttons img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.aboutme{
+
+  font-family: 'Poppins', sans-serif;
+  width: 430px;
+  height: 300px;
+  position: absolute;
+  top: 280px; /* Adjust the top distance as needed */
+  right: 90px; /* Adjust the right distance as needed */
+  color:antiquewhite;
+
+}
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 768px) {
+      .jumbotron {
+        flex-direction: column; /* Stack profile and title vertically */
+        align-items: center; /* Center elements horizontally */
+      }
+
+      .profile-image-container {
+        margin-right: 0; /* Remove margin for smaller screens */
+      }
+
+      .title{
+
+        font-size: 20px;
+
+
+      }
+    }
+  </style>
+
+  <div class="jumbotron">
+    <div class="profile-image-container">
+      <img class="profile" src="/img/me.JPG" alt="logo" />
+    </div>
+    </div>
+    <div class="title">
+      <h1>Back-end Developer;</h1>
+    </div>
+    <div class="aboutme">
+      <p>Hello, my name is Yein An from South Korea and I am passionately pursuing a career in software engineering. 
+        I have a keen interest in iOS development where I can find endless opportunities to create innovative and user-friendly applications.
+         As a fast learner, I am committed to continuous self-improvement and always strive to expand my skills and knowledge
+          to excel in the ever-evolving world of technology. 
+          I am excited to contribute my expertise to the software development field and make a meaningful impact.
+
+      </p>
+    </div>
+ 
+
+  <div class="buttons">
+    <a href="/img/Yein_An_Resume.pdf"><button><img src="/img/recruitment.png" /></button></a>
+    <a href="https://www.instagram.com/a.yenn_94/" target="_blank"><button><img src="/img/instagram.png" /></button></a>
+    <a href="https://www.linkedin.com/in/yeinan" target="_blank"><button><img src="/img/linkedin.png" /></button></a>
+  </div>
+</main>
+
+<!--bottom nav-->
+<!--script section-->
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

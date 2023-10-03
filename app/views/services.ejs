@@ -1,0 +1,116 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+       <!-- Yein An 301316062 2023 Fall September -->
+
+<link rel="stylesheet" href="style.css"/>
+<style>
+
+.jumbotron h1{
+    color:dimgray;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.firstlayer, .secondlayer {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+
+
+
+
+.firstlayer img {
+  height: 100px;
+  width: 100px;
+}
+
+.secondlayer img {
+  height: 110px;
+  width: 110px;
+}
+
+.design,.webdi,.data {
+  text-align: center;
+  width: 160px; 
+  margin: 0 70px;
+  padding: 10px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.mobile,.word{
+
+
+  margin: 0 100px;
+}
+.design p,.webdi p,.data p,.word p,.mobile p{
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: dimgray;
+  text-align: center;
+  white-space: normal;
+  margin-top: 10px;
+  
+}
+
+.firstlayer h2,.secondlayer h2{
+
+  color: dimgray;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: bold;
+}
+
+
+  </style>
+<main class="container">
+  <div class="jumbotron">
+    <h1>Services</h1>
+    </div>
+    <div class="firstlayer">
+      <div class="design">
+    <img src="/img/web-design.png" alt="logo" />
+    <h2>Front-End</h2>
+    <p>HTML•CSS•JavaScript•JQuery•Express.js•Node.js</p>
+    </div>
+    <div class="webdi">
+    <img src="/img/web-development.png" alt="logo" />
+    <h2>Back-End</h2>
+    <p>C#•Java•Python•.NET </p>
+    </div>
+    <div class="data">
+    <img src="/img/data-management.png" alt="logo" />
+    <h2>Data</h2>
+    <p>SQL</p>
+  </div>
+  </div>
+
+  <div class="secondlayer">
+    <div class="word">
+    <img src="/img/word.png" alt="logo" />
+    <h2>Documents</h2>
+    <p>MS office</p>
+    </div>
+    <div class="mobile">
+    <img src="/img/mobile-phone.png" alt="logo" />
+    <h2>Processing</h2>
+    <p>Mobile•Swift•React.js•MongoDB</p>
+    </div>
+  </div>
+
+
+    </main>
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+
